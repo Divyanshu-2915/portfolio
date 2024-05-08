@@ -48,7 +48,7 @@ const FooterPage = () => {
             <h1 className="text-[#7469B6] text-3xl">Contact</h1>
             <ul className="text-2xl w-full flex flex-col gap-4">
               <li>+91-9214505938</li>
-              <li>dadheech.29divyanshu@gmail.com</li>
+              <li>dadheech.29divyanshu<br/>@gmail.com</li>
               <li>example.com</li>
               <li>189,Vakil Colony, Bhilwara, Raj.</li>
             </ul>
