@@ -42,12 +42,15 @@ const HomePage = () => {
             <img src="../images/banner.png" alt="" className=" rounded-2xl" />
             <div className="bg-[#EEEEEE] flex flex-col gap-4 w-max p-2 rounded-3xl m:flex-row m:rounded-full font-basicFour">
               <button className=" h-12 w-44 text-2xl rounded-3xl bg-[#7469B6] text-[#EEEEEE] flex gap-2 justify-center items-center">
+              <a href="https://drive.google.com/file/d/1u8Hi_oNhxPoFTFXuqXtO7o-npsHcLXXM/view?usp=sharing">
                 Resume
+                </a>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   className="bg-[#47A992] rounded-full p-2 h-6 w-6"
                   size="sm"
                 />
+                
               </button>
               <button className=" h-12 w-48 text-2xl border border-black rounded-3xl bg-[#FFE6E6] px-2">
                 <a href="#contact-page">
