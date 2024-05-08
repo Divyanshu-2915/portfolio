@@ -97,9 +97,9 @@ const ContactPage = () => {
               name="Message"
               id="textarea"
               placeholder="Message*"
-              className=" rounded-xl bg-[#a1a1d8] text-[#EEEEEE] placeholder:text-[#EEEEEE] placeholder:px-2 placeholder:py-2"
+              className=" rounded-xl bg-[#a1a1d8] text-[#EEEEEE] placeholder:text-[#EEEEEE] placeholder:px-2 placeholder:py-2 w-full"
               rows="5"
-              cols="42"
+              cols="40"
             ></textarea>
           </div>
           <div className="bg-[#EEEEEE] rounded-full text-[3vh] flex flex-row gap-4 font-basicNine w-max">

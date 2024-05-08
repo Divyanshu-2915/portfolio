@@ -1,33 +1,31 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
-
-  // Toggle function to handle the navbar's display
   const handleNav = () => {
     setNav(!nav);
   };
-
-  // Array containing navigation items
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'Services' },
-    { id: 3, text: 'Projects' },
+    { id: 1, text: 'Home', path: '../Home' },
+    { id: 2, text: 'Services', path: '../Service' },
+    { id: 3, text: 'Projects', path: '../Project' },
   ];
 
   return (
-    <div className='flex justify-between items-center h-16 w-full mx-auto px-4'>
+    <div className='flex justify-between items-center h-16 w-full mx-auto px-4 overflow-x-auto'>
       <h1 className='w-full text-[5vh] font-bold text-[#7469B6] font-basicSix'>Divyanshu</h1>
       <ul className='hidden s:flex s:flex-row s:gap-8 h-10 s:items-center s:justify-center s:mx-8'>
         {navItems.map(item => (
+            <Link to={item.path}>
           <li
             key={item.id}
             className='p-4 border-b h-8 content-center text-[3vh]  border-[#7469B6] text-[#2B283E] font-basicSix cursor-pointer duration-300'
           >
             {item.text}
           </li>
+          </Link>
         ))}
       </ul>
       <div onClick={handleNav} className='block s:hidden mx-8'>

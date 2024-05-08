@@ -2,11 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 library.add(faArrowRight);
 
 const FooterPage = () => {
   return (
-    <section className="flex flex-col h-max text-[#2B283E]">
+    <section className="flex flex-col h-max text-[#2B283E] p-8">
       <div className="h-max w-full flex flex-col gap-8">
         <div className="font-basicSix flex flex-col xl:flex-row gap-4 items-center justify-between my-8">
           <div className="flex flex-row gap-2 text-[6vh] xm:text-[7vh]">
@@ -21,8 +22,10 @@ const FooterPage = () => {
                   size="sm"
                 />
                 <button className="bg-[#47A992] rounded-full px-2">
+                <Link to='./Contact'>
                   {" "}
                   Hire me
+                  </Link>
                 </button>
               </div>
         </div>
@@ -33,12 +36,12 @@ const FooterPage = () => {
               A skilled Frontend developer with a passion for user-friendly web with crafting clean, maintainable code and collaborating with designers for optimal UX.
             </p>
           </div>
-          <div className="w-full m:w-1/2 xl:w-1/2 flex flex-col gap-2 font-basicSix xl:items-center">
+          <div className="w-full m:w-1/2 xl:w-1/2 flex flex-col gap-2 font-basicSix items-start">
             <h1 className="text-[#7469B6] text-3xl">Navigation</h1>
             <ul className="text-2xl w-full flex flex-col gap-4">
-              <li>Home</li>
-              <li>Services</li>
-              <li>Projects</li>
+              <li><Link to='./Home'>Home</Link></li>
+              <li><Link to='./Service'>Services</Link></li>
+              <li><Link to='./Project'>Projects</Link></li>
             </ul>
           </div>
           <div className="w-full m:w-1/2 xl:w-1/2 flex flex-col gap-2 font-basicSix items-start">
@@ -53,9 +56,9 @@ const FooterPage = () => {
           <div className="w-full m:w-1/2 xl:w-1/2 flex flex-col gap-2 font-basicSix items-start">
             <h1 className="text-[#7469B6] text-3xl">Connect</h1>
             <ul className="text-2xl w-full flex flex-col gap-4">
-              <li className="underline underline-offset-4">LinkedIn</li>
-              <li className="underline underline-offset-4">Github</li>
-              <li className="underline underline-offset-4">Behance</li>
+              <li className="underline underline-offset-4"><a href='https://www.linkedin.com/in/divyanshu-dadheech-29d15p/'>LinkedIn</a></li>
+              <li className="underline underline-offset-4"><a href='https://github.com/Divyanshu-2915'>Github</a></li>
+              <li className="underline underline-offset-4"><a href='https://www.behance.net/divyansdadheec'>Behance</a></li>
             </ul>
           </div>
         </div>

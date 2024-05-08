@@ -13,6 +13,7 @@ import ReviewPage from "./Reviews";
 import ContactPage from './Contact';
 import FooterPage from "./Footer";
 import NavbarPage from "./Navbar";
+import {Link} from "react-router-dom";
 
 library.add(
   faLaptopCode,
@@ -49,7 +50,9 @@ const HomePage = () => {
                 />
               </button>
               <button className=" h-12 w-48 text-2xl border border-black rounded-3xl bg-[#FFE6E6] px-2">
+                <a href="#contact-page">
                 Connect with me
+                </a>
               </button>
             </div>
           </div>
@@ -72,8 +75,10 @@ const HomePage = () => {
                   size="sm"
                 />
                 <button className="bg-[#47A992] rounded-full px-2">
+                <Link to='./Service'>
                   {" "}
                   View all services
+                  </Link>
                 </button>
               </div>
             </div>
@@ -122,7 +127,7 @@ const HomePage = () => {
             <div className="lg:w-1/2 lg:h-3/4 flex justify-center items-center">
               <div className="font-basicFour text-[6vh] xm:text-[7vh] flex flex-col gap-2 justify-center lg:items-start px-4 items-center">
                 <h1>-About Me</h1>
-                <div className="flex flex-col gap-0 lg:gap-2 leading-tight lg:leading-normal text-[9vh] xm:text-[10vh] lg:flex-row items-center lg:items-start">
+                <div className="flex flex-col gap-0 lg:gap-2 leading-tight lg:leading-normal text-[9vh] xm:text-[10vh] items-center lg:items-start">
                   <h1>Who is</h1>
                   <h1 className="text-[#7469B6] text-center">Divyanshu Dadheech ?</h1>
                 </div>
@@ -213,8 +218,10 @@ const HomePage = () => {
                   size="sm"
                 />
                 <button className="bg-[#47A992] rounded-full px-2">
+                  <Link to='./Project'>
                   {" "}
                   View all projects
+                  </Link>
                 </button>
               </div>
             </div>
@@ -290,7 +297,9 @@ const HomePage = () => {
           </div>
         </section>
         {/* --- */}
+        <div id="contact-page">
         <ContactPage/>
+        </div>
         <ReviewPage/>
         <FooterPage/>
       </section>
