@@ -31,7 +31,11 @@ const ContactPage = () => {
         <div className="flex flex-col gap-4 text-xl font-basicFour">
           <div className="flex flex-row gap-4 items-center">
             <FontAwesomeIcon icon={faPhone} />
-            <p>+91-9214505938</p>
+            <p>
+            <a href="https://wa.me/9214505938">
+            +91-9214505938
+            </a>
+            </p>
           </div>
           <div className="flex flex-row gap-4 items-center">
             <FontAwesomeIcon icon={faEnvelope} />
