@@ -40,12 +40,14 @@ const Navbar = () => {
       >
         <h1 className='w-full text-[5vh] font-bold text-[#E8EBF7] mt-4 font-basicSix text-center'>Divyanshu</h1>
         {navItems.map(item => (
+          <Link to={item.path}>
           <li
             key={item.id}
             className=' border-b w-44 h-10 border-[#E8EBF7] duration-300 cursor-pointer text-[3vh] font-basicSix text-center text-[#E8EBF7]'
           >
             {item.text}
           </li>
+          </Link>
         ))}
       </ul>
     </div>
