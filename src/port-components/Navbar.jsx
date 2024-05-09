@@ -43,7 +43,7 @@ const Navbar = () => {
           <Link to={item.path}>
           <li
             key={item.id}
-            className=' border-b w-44 h-10 border-[#E8EBF7] duration-300 cursor-pointer text-[3vh] font-basicSix text-center text-[#E8EBF7]'
+            className=' w-44 h-10 duration-300 cursor-pointer text-[3vh] font-basicSix text-center text-[#E8EBF7]'
           >
             {item.text}
           </li>
